@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <nav>
-        <p> is Navigation Bar </p>
-        <button>Home</button>
-        <button>About</button>
-    </nav>
+
+    <!-- Navigarion Bar-->
+   <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img class="menu-close-button" src="img2.png" alt="png"></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contect</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+         <ul>
+            <li><a href="#">Lokesh Jangir</a></li>
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">Projects</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">contect</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="img1.png" alt="png"></a></li>
+        </ul>
+   </nav>
+
+   <div class="mainContent">
+        Lokesh Jangir
+   </div>
 </body>
-    <script></script>
+<script src="script.js" ></script>
 </html>
